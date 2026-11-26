@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maritza">
+    <meta name="description" content="PetGuard website project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PetGuard</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 600px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+2:wght@400;500;600;700&family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <script src="scripts/mobile-nav.js" defer></script>
+  </head>
+
+<body id="services-page">
+
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <a href="index.html">
+      <img src="images/petguard-logo.svg" class="nav-logo" alt="PetGuard Logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="services.html">SERVICES</a>
+      <a href="shop.html">SHOP</a>
+      <a href="about-us.html">ABOUT US</a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- HERO -->
+  <section class="services-hero">
+    <picture>
+      <source srcset="images/services/hero-img-service-mobile.png" media="(max-width: 600px)">
+      <img src="images/services/hero-img-services.png" class="services-hero-img" alt="Small dog on grooming table">
+    </picture>
+
+    <div class="services-hero-text">
+      <h1>Professional<br>Pet Grooming</h1>
+    </div>
+  </section>
+
+  <!-- GROOMING SERVICES OVERVIEW -->
+  <section class="grooming-services" id="grooming-services">
+    <img src="images/services/brown-paw-corner-left.png" class="paw-decor paw-left" alt="Brown paw print illustration">
+
+    <div class="grooming-services-inner">
+      <div class="grooming-copy">
+        <h2>Our Grooming Services</h2>
+        <p>The basics every pup needs to look and feel their&nbsp;best.</p>
+        <a href="#packages">Check our packages</a>
+      </div>
+
+      <div class="services-gallery">
+        <article class="service-card">
+          <img src="images/services/doggie-bathing.png" alt="Dog getting a bath">
+          <h3>Full Bath & Brush</h3>
+        </article>
+        <article class="service-card">
+          <img src="images/services/styling-cut.png" alt="Dog getting haircut">
+          <h3>Haircut & Styling</h3>
+        </article>
+        <article class="service-card">
+          <img src="images/services/teeth-brushing.png" alt="Dog teeth brushing">
+          <h3>Teeth Brushing</h3>
+        </article>
+        <article class="service-card">
+          <img src="images/services/nail-trimming.png" alt="Dog nail trimming">
+          <h3>Nail Trimming</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="packages" id="packages">
+    <img src="images/services/orange-paw-left-corner.png" class="paw-decor paw-top-left" alt="Orange paw print illustration">
+    <img src="images/services/brown-right-paw-corner.png" class="paw-decor paw-top-right" alt="Brown paw print illustration">
+
+    <div class="packages-heading">
+      <div class="packages-badge">Treat Time</div>
+      <div class="packages-title">
+        <h2>Spa Day for Your Pup</h2>
+        <p>Choose the pampering package that keeps your pup fresh, fluffy, and ready for cuddles.</p>
+      </div>
+    </div>
+
+    <div class="package-grid">
+      <article class="package-card">
+        <div>
+          <p class="package-price">$35+</p>
+          <p class="package-tier">Full Bath</p>
+        </div>
+        <ul>
+          <li>Brushing</li>
+          <li>Nail trim</li>
+          <li>Towel dry</li>
+          <li>Ear cleaning</li>
+          <li>Teeth cleaning</li>
+          <li>Shampoo &amp; conditioner</li>
+        </ul>
+        <button type="button" class="package-btn">Choose</button>
+      </article>
+
+      <article class="package-card">
+        <div>
+          <p class="package-price">$75+</p>
+          <p class="package-tier">Full Groom</p>
+        </div>
+        <ul>
+          <li>Fluff, brush &amp; style finish</li>
+          <li>Spa-style bath for soft, clean fur</li>
+          <li>Breed-specific or custom haircut</li>
+        </ul>
+        <button type="button" class="package-btn">Choose</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- SCHEDULE SECTION -->
+  <section class="schedule-spa">
+    <div class="schedule-layout">
+      <div class="schedule-illustration">
+        <img src="images/services/spot-icon-bath.png" alt="Dog relaxing in bubble bath">
+      </div>
+
+      <div class="booking-card">
+        <div class="booking-header">
+          <h2>Schedule Your Pet's Spa Day</h2>
+          <p>A calm, comfortable grooming experience for your pet. Pick a package, book a time, and we'll handle the rest.</p>
+        </div>
+
+        <div class="booking-fields">
+          <div class="booking-field">
+            <label for="pet-name">Name</label>
+            <input id="pet-name" class="booking-input" type="text" placeholder="Enter your pet's full name">
+          </div>
+          <div class="booking-field">
+            <label for="pet-breed">Breed</label>
+            <input id="pet-breed" class="booking-input" type="text" placeholder="Select your dog's breed">
+          </div>
+          <div class="booking-field full">
+            <label for="pet-email">Email</label>
+            <input id="pet-email" class="booking-input" type="email" placeholder="youremail@email.com">
+          </div>
+          <div class="booking-field full">
+            <label for="pet-phone">Phone</label>
+            <input id="pet-phone" class="booking-input" type="tel" placeholder="(555) 123-4567">
+          </div>
+          <div class="booking-field full">
+            <label for="service-type">Service Type</label>
+            <select id="service-type" class="booking-input" required>
+              <option value="" selected disabled>Select service</option>
+              <option>Full Bath</option>
+              <option>Full Groom</option>
+            </select>
+          </div>
+          <div class="booking-field full">
+            <label for="service-groomer">Groomer</label>
+            <select id="service-groomer" class="booking-input" required>
+              <option value="" selected disabled>Select groomer</option>
+              <option>Maya</option>
+              <option>Jason</option>
+              <option>Emily</option>
+            </select>
+          </div>
+          <div class="booking-field full">
+            <label for="appointment-date">Date</label>
+            <input id="appointment-date" class="booking-input" type="date" required>
+          </div>
+          <div class="booking-field full">
+            <label for="appointment-clock">Time</label>
+            <input id="appointment-clock" class="booking-input" type="time" required>
+          </div>
+        </div>
+        <button type="button" class="booking-btn">Confirm Appointment</button>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer">
+  <img src="images/footer-design.png" class="footer-bg" alt="Footer background design">
+
+  <nav class="footer-nav">
+    <a href="services.html">SERVICES</a>
+    <a href="shop.html">SHOP</a>
+    <a href="about-us.html">ABOUT US</a>
+  </nav>
+
+  <a href="index.html" class="footer-logo">
+    <img src="images/petguard-logo.svg" alt="PetGuard Logo">
+  </a>
+
+  <p class="footer-copy">© 2025 PetGuard. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

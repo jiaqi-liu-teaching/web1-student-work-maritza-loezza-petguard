@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maritza">
+    <meta name="description" content="PetGuard website project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PetGuard</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 600px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+2:wght@400;500;600;700&family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <script src="scripts/mobile-nav.js" defer></script>
+  </head>
+
+<body id="shop-page">
+
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <a href="index.html">
+      <img src="images/petguard-logo.svg" class="nav-logo" alt="PetGuard Logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="services.html">SERVICES</a>
+      <a href="shop.html">SHOP</a>
+      <a href="about-us.html">ABOUT US</a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- SHOP HERO -->
+  <section class="shop-hero">
+    <picture>
+      <source srcset="images/shop/shop-hero-img-mobile.png" media="(max-width: 600px)">
+      <img src="images/shop/shop-hero-img.png" class="shop-hero-img" alt="Dog enjoying products">
+  </picture>
+    <div class="shop-hero-text">
+      <h1>Find the Perfect<br><span class="hero-line-two">Products for Your Pup</span></h1>
+    </div>
+  </section>
+
+  <!-- PET PROFILE SECTION -->
+  <section class="pet-profile" id="pet-profile">
+    <img src="images/shop/pet-profile.png" class="pet-profile-img" alt="Pet profile illustration">
+    <div class="pet-profile-card">
+      <div class="profile-heading">
+        <span>Your Pet’s Profile</span>
+        <p>Build it once. Shop smarter.</p>
+      </div>
+
+      <div class="profile-fields">
+        <div class="profile-field">
+          <label for="shop-pet-name">Name</label>
+          <input id="shop-pet-name" class="profile-input" type="text" placeholder="Enter your dog's name">
+        </div>
+
+        <div class="profile-field">
+          <label for="shop-pet-breed">Breed</label>
+          <input id="shop-pet-breed" class="profile-input" type="text" placeholder="e.g., Labrador, Poodle, Mix">
+        </div>
+
+        <div class="profile-field">
+          <label for="shop-pet-age">Age</label>
+          <input id="shop-pet-age" class="profile-input" type="text" placeholder="Select years or months">
+        </div>
+
+        <div class="profile-field">
+          <label for="shop-pet-weight">Weight</label>
+          <input id="shop-pet-weight" class="profile-input" type="text" placeholder="Lbs or Kg">
+        </div>
+
+        <div class="profile-field">
+          <label for="shop-pet-size">Size</label>
+          <select id="shop-pet-size" class="profile-input profile-select" name="pet_size" required>
+            <option value="" selected disabled>Select a size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+
+        <div class="profile-field">
+          <label for="shop-pet-coat">Coat Type</label>
+          <select id="shop-pet-coat" class="profile-input profile-select" name="pet_coat_type" required>
+            <option value="" selected disabled>Select coat type</option>
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+          </select>
+        </div>
+
+        <div class="profile-field full">
+          <label for="shop-pet-allergies">Allergies</label>
+          <input id="shop-pet-allergies" class="profile-input" type="text" placeholder="Optional">
+        </div>
+      </div>
+
+      <div class="btn-primary profile-btn">Create Profile</div>
+    </div>
+  </section>
+
+  <!-- PRODUCT GRID -->
+  <section class="shop-products" id="shop-products">
+    <div class="shop-heading">
+      <h2>Shop for Your Pup</h2>
+      <p class="shop-subtitle">Find Great Deals</p>
+    </div>
+
+    <div class="product-grid">
+      <article class="product-card brown">
+        <img src="images/shop/dog-toy.png" alt="Dog toys" loading="lazy">
+        <h3>DOG’S TOYS</h3>
+        <h4>PetGuard</h4>
+        <p>Perfect for pups who love to chew, fetch, and tug. Keeps them active, curious, and&nbsp;happy.</p>
+        <span class="product-price">$5.00</span>
+      </article>
+
+      <article class="product-card blue">
+        <img src="images/shop/shampoo.png" alt="Dog shampoo" loading="lazy">
+        <h3>DOG SHAMPOO</h3>
+        <h4>PetGuard</h4>
+        <p>Gentle, nourishing formula for shiny, healthy coats. Helps maintain softness and shine.</p>
+        <span class="product-price">$10.00</span>
+      </article>
+
+      <article class="product-card orange">
+        <img src="images/shop/dog-treats.png" alt="Dog treats" loading="lazy">
+        <h3>DOG TREATS</h3>
+        <h4>PetGuard</h4>
+        <p>Delicious bites that freshen your dog’s breath and smile.</p>
+        <span class="product-price">$15.00</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROMO -->
+  <section class="shop-promo">
+    <img src="images/shop/spot-icon-shop.png" alt="Spot icon" class="promo-icon">
+    <div class="promo-text">
+      <h2>Save 20% on <span class="promo-line-two">your first&nbsp;order!</span></h2>
+      <p>Join PetGuard and get treats, toys, and<br>care products for&nbsp;less.</p>
+      <a href="#shop-products" class="promo-link">Read more</a>
+    </div>
+  </section>
+
+<footer class="footer">
+  <img src="images/footer-design.png" class="footer-bg" alt="Footer background design">
+
+  <nav class="footer-nav">
+    <a href="services.html">SERVICES</a>
+    <a href="shop.html">SHOP</a>
+    <a href="about-us.html">ABOUT US</a>
+  </nav>
+
+  <a href="index.html" class="footer-logo">
+    <img src="images/petguard-logo.svg" alt="PetGuard Logo">
+  </a>
+
+  <p class="footer-copy">© 2025 PetGuard. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

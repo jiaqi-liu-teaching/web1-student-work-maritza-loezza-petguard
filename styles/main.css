@@ -1,0 +1,1600 @@
+@font-face {
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/luckiestguy/v25/_gP_1RrxsjcxVyin9l9n_j2RSg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/baloo2/v23/wXK0E3kTposypRydzVT08TS3JnAmtdgazapv.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Konkhmer Sleokchher';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/konkhmersleokchher/v3/_Xmw-GE-rjmabA_M-aPOZOsCrUv825LFI34.ttf') format('truetype');
+}
+
+h1,
+h2,
+h3,
+button,
+footer a {
+  font-family: 'Luckiest Guy', sans-serif;
+}
+
+body,
+p,
+li,
+a {
+  font-family: 'Baloo 2', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+/* NAV */
+.nav {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 80px;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  gap: 105px;
+  z-index: 1000;
+  background: transparent;
+}
+
+.nav-logo {
+  width: 156px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.nav-links a {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  text-decoration: none;
+  color: #FDE4D6;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background: #FDE4D6;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+.nav-toggle {
+  display: none;
+}
+
+/* HOME PAGE */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 850px;
+  margin-top: -80px;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: 1;
+}
+
+.hero-left {
+  position: absolute;
+  top: 220px;
+  left: 75px;
+  width: 400px;
+  color: #FDE4D6;
+  z-index: 2;
+}
+
+.hero-left h1 {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.6px;
+  margin: 0 0 18px;
+}
+
+.hero-left p {
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0 0 28px;
+}
+
+.hero-btn {
+  background: #492519;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  text-decoration: none;
+  color: #FDE4D6;
+  padding: 6px 22px;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* HOME PAGE - GROOMING SECTION */
+.grooming-easier {
+  position: relative;
+  width: 100%;
+  background-color: #B9DBE6;
+  padding: 170px 0 200px;
+  overflow: hidden;
+  margin-top: -112px;
+  margin-bottom: -60px;
+}
+
+.grooming-title {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 45px;
+  color: #136C88;
+  text-align: center;
+  margin: 60px 0 18px;
+}
+
+.grooming-subtitle {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #136C88;
+  text-align: center;
+  margin: 0 0 130px;
+}
+
+.grooming-row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  position: relative;
+  z-index: 3;
+}
+
+.milo-card {
+  width: 500px;
+  height: auto;
+  display: block;
+  background: #B9DBE6;
+  padding: 10px;
+  border-radius: 24px;
+  object-fit: contain;
+}
+
+.grooming-text {
+  max-width: 500px;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.grooming-text h3 {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  color: #136C88;
+  margin: 0;
+}
+
+.grooming-text p {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 17px;
+  line-height: 27px;
+  color: #136C88;
+  margin: 0;
+  width: 100%;
+}
+
+.btn-primary {
+  margin-top: 6px;
+  display: inline-block;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  background: #492519;
+  color: #FDE4D6;
+  padding: 12px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.top-blob {
+  position: absolute;
+  top: 112px;
+  right: 0;
+  left: auto;
+  transform: none;
+  width: 105%;
+  max-width: 1400px;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* HOME PAGE - WHY SECTION */
+.why {
+  position: relative;
+  width: 100%;
+  min-height: 860px;
+  margin: 40px 0;
+  background: #B9DBE6;
+  overflow: visible;
+  z-index: 1;
+}
+
+.why::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -80px;
+  height: 80px;
+  background: #B9DBE6;
+  z-index: 0;
+}
+
+.why-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.why-content {
+  position: absolute;
+  top: 55%;
+  left: 335px;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: #FDE4D6;
+}
+
+.why-content h2 {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 48px;
+  color: #FDE4D6;
+  line-height: 48px;
+  letter-spacing: 1.5px;
+  margin: 0 0 20px;
+}
+
+.why-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.why-content li {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 17px;
+  color: #FDE4D6;
+  line-height: 28px;
+}
+
+/* HOME PAGE - REVIEWS SECTION */
+.reviews {
+  background-color: #B9DBE6;
+  width: 100%;
+  padding: 120px 0 160px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.reviews-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.review-image-box {
+  width: 480px;
+  height: 480px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.review-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-text-box {
+  width: 420px;
+  padding-top: 20px;
+}
+
+.review-text-box h2 {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 48px;
+  color: #DC6C3C;
+  margin: 0 0 15px;
+}
+
+.stars {
+  font-size: 22px;
+  color: #CB7D1D;
+  margin-bottom: 15px;
+}
+
+.review-paragraph {
+  font-family: 'Baloo 2', Medium;
+  font-size: 17px;
+  line-height: 28px;
+  color: #DC6C3C;
+  margin-bottom: 15px;
+}
+
+.reviewer-name {
+  font-family: 'Baloo 2', Medium;
+  font-size: 16px;
+  color: #DC6C3C;
+}
+
+.review-paw {
+  position: absolute;
+  right: 140px;
+  bottom: 120px;
+  width: 130px;
+  opacity: 1;
+}
+
+/* SERVICES PAGE */
+.services-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+.services-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.services-hero-text {
+  position: absolute;
+  top: 43%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  color: #FDE4D6;
+  font-family: 'Luckiest Guy', sans-serif;
+  text-transform: lowercase;
+  text-align: center;
+  letter-spacing: 1px;
+  z-index: 3;
+}
+
+.services-hero-text h1 {
+  font-size: 42px;
+  line-height: 54px;
+  letter-spacing: 0.6px;
+  margin: 0;
+}
+
+/* SERVICES PAGE - GROOMING SERVICES */
+.grooming-services {
+  position: relative;
+  background: #B9DBE6;
+  padding: 260px 40px 160px;
+  margin-top: -220px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.grooming-services-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.grooming-copy {
+  max-width: 360px;
+  color: #492519;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 250px;
+  margin-left: 160px;
+}
+
+.grooming-copy h2 {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 42px;
+  line-height: 50px;
+  margin: 0;
+  text-align: left;
+}
+
+.grooming-copy p {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+  text-align: left;
+}
+
+.grooming-copy a {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  color: #492519;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.grooming-copy a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 48%;
+  height: 3px;
+  background: #492519;
+  border-radius: 800px;
+}
+
+.services-gallery {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 240px);
+  justify-content: center;
+  gap: 24px;
+  margin-top: 85px;
+}
+
+.service-card {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.service-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.service-card h3 {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.service-card:nth-child(1) h3,
+.service-card:nth-child(3) h3 {
+  color: #4A2B1A;
+}
+
+.service-card:nth-child(2) h3,
+.service-card:nth-child(4) h3 {
+  color: #FDE4D6;
+}
+
+.service-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
+  filter: saturate(1.1);
+}
+
+.paw-decor {
+  position: absolute;
+  width: 140px;
+  pointer-events: none;
+}
+
+.paw-left {
+  top: 260px;
+  left: 70px;
+  width: 160px;
+}
+
+.paw-top-left {
+  top: 70px;
+  left: 60px;
+  width: 170px;
+}
+
+.paw-top-right {
+  top: 10px;
+  right: 50px;
+  left: auto;
+  width: 210px;
+}
+
+/* SERVICES PAGE - PACKAGES */
+.packages {
+  position: relative;
+  background: #B9DBE6;
+  padding: 120px 60px 220px;
+  margin-top: -20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.packages-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 80px;
+}
+
+.packages-badge {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #FDE4D6;
+  background: #492519;
+  padding: 8px 32px;
+  border-radius: 22px;
+  border: none;
+}
+
+.packages-title h2 {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 50px;
+  color: #492519;
+  margin: 6px 0 18px;
+}
+
+.packages-title p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #492519;
+  margin: 0;
+  max-width: 540px;
+}
+
+.package-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.package-card {
+  background: #492519;
+  color: #FDE4D6;
+  border-radius: 32px;
+  width: 380px;
+  min-height: 380px;
+  padding: 36px 34px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.package-price {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 42px;
+  margin: 0;
+  line-height: 1;
+}
+
+.package-tier {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  margin: 6px 0 0;
+  text-transform: uppercase;
+}
+
+.package-card ul {
+  list-style: disc;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 17px;
+  line-height: 27px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.package-btn {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  background: #FDE4D6;
+  color: #492519;
+  border: none;
+  border-radius: 14px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+  margin-top: auto;
+}
+
+.package-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+/* SERVICES PAGE - SCHEDULE */
+.schedule-spa {
+  background: #B9DBE6;
+  padding: 40px 40px 102px;
+  position: relative;
+  margin-top: -50px;
+}
+
+.schedule-layout {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+
+.booking-card {
+  background: #136C88;
+  border-radius: 28px;
+  padding: 32px 44px;
+  width: 550px;
+  box-shadow: none;
+  text-align: center;
+  color: #FDE4D6;
+}
+
+.schedule-illustration {
+  width: 560px;
+  max-width: 100%;
+  transform: translateX(-35px);
+}
+
+.schedule-illustration img {
+  width: 560px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.booking-header h2 {
+  font-family: 'Luckiest Guy', sans-serif;
+  color: #FDE4D6;
+  font-size: 31px;
+  line-height: 1.1;
+  margin: 0 auto;
+  max-width: none;
+  white-space: nowrap;
+}
+
+.booking-header p {
+  color: #FDE4D6;
+  font-size: 15px;
+  line-height: 23px;
+  margin: 10px auto 0;
+  max-width: 460px;
+}
+
+.booking-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.booking-field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.booking-field label {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  color: #FDE4D6;
+  text-align: left;
+  padding-left: 0;
+}
+
+.booking-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: #FDE4D6;
+  border: none;
+  border-radius: 14px;
+  min-height: 56px;
+  padding: 10px 13px;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 14px;
+  color: #492519;
+  text-align: left;
+}
+
+.booking-input::placeholder {
+  color: #8F766B;
+  opacity: 1;
+}
+
+.booking-input:focus {
+  outline: 2px solid #492519;
+  outline-offset: 1px;
+}
+
+#service-type,
+#service-groomer {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #8F766B;
+  padding-right: 44px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%238F766B' d='M6 8 0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px 8px;
+}
+
+#service-type option,
+#service-groomer option {
+  color: #492519;
+}
+
+#appointment-date,
+#appointment-clock {
+  color: #8F766B;
+  padding-right: 44px;
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 14px 14px;
+}
+
+#appointment-date {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='%238F766B' d='M7 2h2v2h6V2h2v2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3zm13 8H4v10h16z'/%3E%3C/svg%3E");
+}
+
+#appointment-clock {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='%238F766B' d='M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m1 5h-2v6l5 3 1-1.73-4-2.27z'/%3E%3C/svg%3E");
+}
+
+#service-type:focus,
+#service-groomer:focus,
+#appointment-date:focus,
+#appointment-clock:focus {
+  color: #8F766B;
+}
+
+#service-type:valid,
+#service-groomer:valid,
+#appointment-date:valid,
+#appointment-clock:valid {
+  color: #492519;
+}
+
+#appointment-date:focus {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='%238F766B' d='M7 2h2v2h6V2h2v2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3zm13 8H4v10h16z'/%3E%3C/svg%3E");
+}
+
+#appointment-date:valid {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='%23492519' d='M7 2h2v2h6V2h2v2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3zm13 8H4v10h16z'/%3E%3C/svg%3E");
+}
+
+#appointment-clock:focus {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='%238F766B' d='M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m1 5h-2v6l5 3 1-1.73-4-2.27z'/%3E%3C/svg%3E");
+}
+
+#appointment-clock:valid {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='%23492519' d='M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m1 5h-2v6l5 3 1-1.73-4-2.27z'/%3E%3C/svg%3E");
+}
+
+#appointment-date::-webkit-calendar-picker-indicator,
+#appointment-clock::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0;
+  width: 28px;
+}
+
+.booking-field.full {
+  grid-column: span 2;
+}
+
+.booking-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px;
+  border-radius: 16px;
+  border: none;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background: #492519;
+  color: #FDE4D6;
+  transition: transform 0.25s ease;
+}
+
+.booking-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* SHOP PAGE */
+.shop-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+.shop-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.shop-hero-text {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  max-width: 640px;
+  padding: 0 20px;
+}
+
+.shop-hero-text h1 {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+  color: #482519;
+  text-transform: none;
+  letter-spacing: 0.8px;
+  margin: 0;
+}
+
+/* SHOP PAGE - PET PROFILE */
+.pet-profile {
+  position: relative;
+  width: 100%;
+  margin-top: -210px;
+  z-index: 1;
+}
+
+.pet-profile-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pet-profile-card {
+  position: absolute;
+  top: 58%;
+  right: 16%;
+  transform: translateY(-50%);
+  background: #FDE4D6;
+  border-radius: 28px;
+  padding: 34px 42px;
+  width: 640px;
+  min-height: 390px;
+  box-shadow: none;
+  z-index: 2;
+}
+
+.profile-heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-heading span {
+  display: block;
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  color: #482519;
+}
+
+.profile-heading p {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 17px;
+  color: #482519;
+  margin: 6px 0 0;
+}
+
+.profile-fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 24px;
+  margin-bottom: 18px;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.profile-field.full {
+  grid-column: span 2;
+}
+
+.profile-field label {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  color: #F07743;
+  text-align: left;
+  padding-left: 0;
+}
+
+.profile-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: #492519;
+  border: none;
+  border-radius: 14px;
+  min-height: 50px;
+  padding: 8px 14px;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 14px;
+  color: rgba(232, 213, 203, 0.72);
+  text-align: left;
+}
+
+.profile-input::placeholder {
+  color: rgba(232, 213, 203, 0.72);
+  opacity: 1;
+}
+
+.profile-input:focus {
+  outline: 2px solid #F07743;
+  outline-offset: 1px;
+}
+
+#shop-page .profile-input,
+#shop-page .profile-input:focus,
+#shop-page .profile-input:not(:placeholder-shown) {
+  color: #FDE4D6;
+}
+
+#shop-page #shop-pet-size,
+#shop-page #shop-pet-coat,
+#shop-page #shop-pet-size:focus,
+#shop-page #shop-pet-coat:focus {
+  color: rgba(232, 213, 203, 0.72);
+}
+
+#shop-page #shop-pet-size:valid,
+#shop-page #shop-pet-coat:valid {
+  color: #FDE4D6;
+}
+
+#shop-page #shop-pet-size option,
+#shop-page #shop-pet-coat option {
+  color: #FDE4D6;
+  background: #492519;
+}
+
+.profile-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 44px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23FDE4D6' d='M6 8 0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px 8px;
+}
+
+.profile-select option {
+  color: #492519;
+  background: #FDE4D6;
+}
+
+.profile-btn {
+  margin: 14px auto 0;
+  padding: 10px 24px;
+  width: max-content;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+.profile-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* SHOP PAGE - PRODUCTS */
+.shop-products {
+  background: #B9DBE6;
+  padding: 120px 0 160px;
+  margin: 0;
+}
+
+.shop-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 35px;
+}
+
+.shop-heading h2 {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 42px;
+  color: #136C88;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.shop-subtitle {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #136C88;
+  margin: 0;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.product-card {
+  width: 300px;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  text-align: left;
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.product-card h3 {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 22px;
+  margin: 20px 10px 6px 20px;
+}
+
+.product-card h4 {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 16px;
+  margin: 0 10px 10px 20px;
+}
+
+.product-card p {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 14.1px;
+  line-height: 24px;
+  margin: 0 10px 10px 20px;
+}
+
+.product-price {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 6px 0 0 20px;
+}
+
+/* SHOP PAGE - PROMO */
+.shop-promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 40px 80px 120px;
+  margin-top: 0;
+  background: #B9DBE6;
+  flex-wrap: wrap;
+}
+
+.promo-icon {
+  width: 620px;
+  max-width: 72%;
+  height: auto;
+  display: block;
+  background: #B9DBE6;
+}
+
+.promo-text {
+  flex: 1 1 360px;
+  max-width: 420px;
+  color: #492519;
+  text-align: left;
+}
+
+.promo-text h2 {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 36px;
+  line-height: 46px;
+  margin: 0 0 12px;
+}
+
+.promo-text p {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 0 12px;
+}
+
+.promo-link {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 15px;
+  color: #492519;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 14px;
+  position: relative;
+}
+
+.promo-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: #492519;
+  border-radius: 999px;
+}
+
+/* ABOUT PAGE */
+.section-label {
+  font-family: 'Konkhmer Sleokchher';
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.about-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: #482519;
+  z-index: 2;
+}
+
+.about-hero-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about-hero-content {
+  position: relative;
+  max-width: 520px;
+  padding: 0 40px 0 60px;
+  text-align: left;
+  position: absolute;
+  top: 44%;
+  right: 260px;
+  transform: translateY(-50%);
+}
+
+.about-hero-content h1 {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 48px;
+  line-height: 52px;
+  margin: 0 0 18px;
+  text-transform: none;
+}
+
+.about-hero-content h1 span {
+  display: block;
+}
+
+.about-hero-content .hero-line-two {
+  white-space: nowrap;
+}
+
+.about-hero-content .hero-subtext {
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 18px;
+  max-width: 520px;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 500;
+}
+
+.about-link {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  color: #4A1F14;
+  text-decoration: none;
+  font-size: 15px;
+  position: relative;
+}
+
+.about-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: #4A1F14;
+  border-radius: 999px;
+}
+
+.about-hero-paws {
+  position: absolute;
+  right: 60px;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-hero-paws span {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+/* ABOUT PAGE - OUR STORY */
+.our-story {
+  width: 100%;
+  padding: 0;
+  margin: -220px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.our-story-photo {
+  width: 108%;
+  height: auto;
+  display: block;
+  margin-left: -4%;
+  margin-top: 4px;
+}
+
+.our-story-content {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  color: #FDE4D6;
+}
+
+.our-story-content h2 {
+  font-family: 'Luckiest Guy';
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.our-story-content p {
+  font-family: 'Baloo 2';
+  font-size: 17px;
+  line-height: 27px;
+}
+
+/* ABOUT PAGE - TEAM */
+.team-section {
+  width: 100%;
+  padding: 90px 0;
+  background-color: #B9DBE6;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 70px;
+}
+
+.section-heading .section-label {
+  font-family: 'Luckiest Guy';
+  font-size: 42px;
+  color: #136C88;
+  margin-bottom: 10px;
+}
+
+.section-heading p {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #136C88;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.team-card {
+  width: 280px;
+  text-align: left;
+}
+
+.team-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.team-card h3 {
+  font-family: 'Konkhmer Sleokchher';
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.team-card h4 {
+  font-family: 'Konkhmer Sleokchher';
+  font-size: 16px;
+  margin: 0 0 10px;
+  margin-left: 20px;
+}
+
+.team-card p {
+  font-family: 'Baloo 2';
+  font-size: 15px;
+  line-height: 24px;
+  margin-left: 20px;
+}
+
+.team-card.brown h3,
+.team-card.brown h4,
+.team-card.brown p,
+.product-card.brown h3,
+.product-card.brown h4,
+.product-card.brown p,
+.product-card.brown .product-price {
+  color: #492519;
+}
+
+.team-card.blue h3,
+.team-card.blue h4,
+.team-card.blue p,
+.product-card.blue h3,
+.product-card.blue h4,
+.product-card.blue p,
+.product-card.blue .product-price {
+  color: #136C88;
+}
+
+.team-card.orange h3,
+.team-card.orange h4,
+.team-card.orange p,
+.product-card.orange h3,
+.product-card.orange h4,
+.product-card.orange p,
+.product-card.orange .product-price {
+  color: #C36034;
+}
+
+.team-card.brown {
+  margin-top: px;
+}
+
+/* ABOUT PAGE - SPECIAL SECTION */
+.special-section {
+  background-color: #B9DBE6;
+  width: 100%;
+  padding: 10px 0 140px;
+  text-align: center;
+}
+
+.special-section .section-label {
+  font-family: 'Luckiest Guy';
+  font-size: 45px;
+  color: #482519;
+  margin-bottom: 5px;
+}
+
+.special-section .section-heading p:nth-of-type(2) {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #482519;
+  margin-bottom: 60px;
+}
+
+.special-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 140px;
+}
+
+.special-illustration img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.special-checks {
+  display: flex;
+  align-items: flex-start; 
+  gap: 22px;
+  margin-top: 80px;
+}
+
+.checklist {
+  width: 40px;
+  margin-top: 5px;
+}
+
+.special-checks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.special-checks ul li {
+  font-family: 'Konkhmer Sleokchher';
+  font-size: 17px;
+  color: #482519;
+
+  line-height: 61px;
+  margin: 0 0 8px 0;
+}
+
+/* FOOTER */
+.footer {
+  position: relative;
+  width: 100%;
+  margin-top: -3px;
+  overflow: hidden;
+  background-color: #B9DBE6;
+  color: #FDE4D6;
+}
+
+.footer-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.footer-nav {
+  position: absolute;
+  top: 72%;
+  left: 8%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 40px;
+  z-index: 2;
+}
+
+.footer-nav a {
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  color: #FDE4D6;
+  letter-spacing: 0.8px;
+}
+
+.footer-logo {
+  position: absolute;
+  top: 70%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.footer-logo img {
+  width: 150px;
+  display: block;
+}
+
+.footer-copy {
+  position: absolute;
+  right: 160px;
+  bottom: 18px;
+  z-index: 2;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 13px;
+  text-align: right;
+}

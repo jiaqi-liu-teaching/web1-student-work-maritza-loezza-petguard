@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maritza">
+    <meta name="description" content="PetGuard website project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PetGuard</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 600px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+2:wght@400;500;600;700&family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <script src="scripts/mobile-nav.js" defer></script>
+  </head>
+
+<body id="about-page">
+
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <a href="index.html">
+      <img src="images/petguard-logo.svg" class="nav-logo" alt="PetGuard Logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="services.html">SERVICES</a>
+      <a href="shop.html">SHOP</a>
+      <a href="about us.html">ABOUT US</a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
+    <picture>
+      <source srcset="images/about-us/hero-img-aboutus-mobile.png" media="(max-width: 600px)">
+      <img src="images/about-us/hero-img-aboutus.png" alt="Happy dog portrait" class="about-hero-bg">
+    </picture>
+
+    <div class="about-hero-content">
+      <h1>
+        <span>Happy Pets.</span>
+        <span class="hero-line-two">Happier Humans.</span>
+      </h1>
+      <p class="hero-subtext">PetGuard Salon exists for the moments that matter clean, cared-for pets and the joy they bring. Every bath, trim, and belly rub is done with&nbsp;love.</p>
+      <a href="#our-story" class="about-link">Read more about us below</a>
+    </div>
+  </section>
+
+  <!-- OUR STORY SECTION -->
+<section class="our-story" id="our-story">
+  
+  <div class="our-story-image-wrapper">
+    <picture>
+      <source srcset="images/about-us/our-story-mobile.png" media="(max-width: 600px)">
+      <img src="images/about-us/our-story.png" 
+         alt="Pet stylist holding a dog" 
+         class="our-story-photo">    
+    </picture>
+    
+  </div>
+
+  <div class="our-story-content">
+    <h2>OUR STORY</h2>
+    <p>
+      We started PetGuard because we believe grooming should be stress free. 
+      With gentle care, quality products, and a love for dogs, our team 
+      creates a safe space where pets can relax and look their best.
+    </p>
+  </div>
+</section>
+
+  <!-- TEAM -->
+<section class="team-section">
+  <div class="section-heading">
+    <p class="section-label dark">Meet Our Team Groomers</p>
+    <p>Our team works together to create a relaxing environment for every pet. From basic baths to full transformations, your pup is in gentle, experienced hands.</p>
+  </div>
+
+  <div class="team-grid">
+
+    <!-- CARD 1 — BROWN -->
+    <article class="team-card brown">
+      <img src="images/about-us/pet-groomer.png" alt="Pet groomer Maya Patel">
+      <h3>Pet Groomer</h3>
+      <h4>Maya Patel</h4>
+      <p>Specializes in gentle care and making<br>every&nbsp;pup&nbsp;feel&nbsp;safe and relaxed.</p>
+    </article>
+
+    <!-- CARD 2 — BLUE -->
+    <article class="team-card blue">
+      <img src="images/about-us/lead-groomer.png" alt="Lead groomer Jason Miller">
+      <h3>Lead Groomer</h3>
+      <h4>Jason Miller</h4>
+      <p>Has years of experience and ensures every grooming session meets top quality care.</p>
+    </article>
+
+    <!-- CARD 3 — ORANGE -->
+    <article class="team-card orange">
+      <img src="images/about-us/pet-stylist.png" alt="Pet stylist Emily Chen">
+      <h3>Pet Stylist</h3>
+      <h4>Emily Chen</h4>
+      <p>Loves creating fresh, clean looks that<br>match&nbsp;every&nbsp;dog's&nbsp;personality.</p>
+    </article>
+  </div>
+</section>
+
+<!-- SPECIAL SECTION -->
+<section class="special-section">
+
+  <div class="section-heading">
+    <p class="section-label">What Makes Us Special</p>
+    <p>Your dog's comfort comes first.</p>
+  </div>
+
+  <div class="special-content">
+
+    <!-- Left dog illustration -->
+    <div class="special-illustration">
+      <img src="images/about-us/spot-icon-2.png" alt="Cartoon dog illustration">
+    </div>
+
+    <!-- Checklist on the right -->
+    <div class="special-checks">
+      <img src="images/about-us/check-list.png" alt="Checklist icons" class="checklist">
+
+      <ul>
+        <li>Personalized Care</li>
+        <li>Happy Pup Guarantee</li>
+        <li>Trained &amp; Certified Groomers</li>
+        <li>Calm, Stress-Free Environment</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <img src="images/footer-design.png" class="footer-bg" alt="Footer background design">
+
+    <nav class="footer-nav">
+      <a href="services.html">SERVICES</a>
+      <a href="shop.html">SHOP</a>
+      <a href="about us.html">ABOUT US</a>
+    </nav>
+
+    <a href="index.html" class="footer-logo">
+      <img src="images/petguard-logo.svg" alt="PetGuard Logo">
+    </a>
+
+    <p class="footer-copy">© 2025 PetGuard. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
