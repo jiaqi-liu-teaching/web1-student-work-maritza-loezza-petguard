@@ -22,7 +22,7 @@
 }
 
 .nav-logo {
-  width: 94px;
+  width: 73px;
 }
 
 .nav-toggle {
@@ -1279,7 +1279,7 @@ button {
 /* MOBILE SIZE TUNE - COMPACT */
 /* Keeps layout structure, but scales text/spacing down for iPhone inspect */
 @media (max-width: 390px) {
-  .nav-logo { width: 94px; }
+  .nav-logo { width: 73px; }
   .nav-links a { font-size: 13px; }
 
   #home-page .hero-left { max-width: 250px; }
@@ -1376,7 +1376,7 @@ button {
 }
 
 .footer-logo img {
-  width: 88px;
+  width: 69px;
 }
 
 .footer-copy {
